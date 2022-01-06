@@ -1,0 +1,84 @@
+html,
+body {
+  font-family: papyrus;
+  margin: 0;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+}
+body {
+  background: url("JOKO.jpg") no-repeat center fixed;
+  background-size: cover;
+}
+.navbar {
+  background-color: black;
+}
+
+.nav-link {
+  color: chocolate;
+}
+.nav-link:hover,
+.nav-link:visited {
+  color: chocolate;
+}
+#togglericon {
+  color: chocolate;
+  font-size: 1.5em;
+}
+.navbar-toggler {
+  border: 3px solid chocolate;
+}
+
+#carouselExampleFade {
+  width: 40em;
+  margin-top: 10em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10em;
+}
+.carousel-inner {
+  height: 40em;
+  box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+#carousel-image {
+  height: 40em;
+}
+#brand-image {
+  height: 3em;
+}
+h5,
+p {
+  color: chocolate;
+  font-size: 2em;
+  text-shadow: black 3px 0px 0px;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  #carouselExampleFade {
+    width: 20em;
+  }
+  .carousel-inner {
+    height: 20em;
+  }
+  #carousel-image {
+    height: 20em;
+  }
+}
+
+@media (max-width: 353px) {
+  #carouselExampleFade {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .carousel-inner {
+    height: 20em;
+  }
+  #carousel-image {
+    height: 20em;
+  }
+  .col-12 {
+    padding: 0;
+  }
+}

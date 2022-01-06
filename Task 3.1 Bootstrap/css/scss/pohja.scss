@@ -1,0 +1,104 @@
+//(Task 5.1) Variables
+$text-color: chocolate;
+$height: 20em;
+//
+//(Task 5.1) Mixing
+@mixin border ($border: #b36b00 ) {
+  border: 5px solid $border;
+  background-color: black;
+}
+//
+
+html,
+body {
+  font-family: papyrus;
+  margin: 0;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+}
+body {
+  background: url("JOKO.jpg") no-repeat center fixed;
+  background-size: cover;
+}
+
+//(Task 5.1) Nesting
+.navbar {
+  @include border;
+  .nav-link,.nav-link:hover,
+  .nav-link:visited {
+    color: $text-color;
+  }
+}
+//
+
+#togglericon {
+  color: $text-color;
+  font-size: 1.5em;
+}
+.navbar-toggler {
+  border: 3px solid $text-color;
+}
+
+#carouselExampleFade {
+  width: 40em;
+  margin-top: 10em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10em; 
+}
+.carousel-inner {
+  height: 40em;
+  @include border;
+}
+#brand-image {
+  height: 3em;
+}
+#carousel-image {
+  height: 40em;
+}
+
+//(Task 5.1) Selectorin > lisäys
+div > h5{
+  color: $text-color;
+  font-size: 2em;
+  text-shadow: black 3px 0px 0px;
+  font-weight: bold;
+}
+//
+
+//(Task 5.1) Selectorin + lisäys
+h5 + p{
+color: gold;
+}
+//
+
+@media (max-width: 767px) {
+  #carouselExampleFade {
+    width: $height;
+  }
+  .carousel-inner {
+    height: $height;
+  }
+  #carousel-image {
+    height: $height;
+  }
+}
+
+@media (max-width: 353px) {
+  #carouselExampleFade {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .carousel-inner {
+    height: $height;
+  }
+  #carousel-image {
+    height: $height;
+  }
+  .col-12 {
+    padding: 0;
+  }
+}
+

@@ -1,0 +1,103 @@
+html,
+body {
+  font-family: papyrus;
+  margin: 0;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+}
+body {
+  background: url("JOKO.jpg") no-repeat center fixed;
+  background-size: cover;
+}
+.navbar {
+  background-color: black;
+}
+
+.nav-link {
+  color: chocolate;
+}
+.nav-link:hover,
+.nav-link:visited {
+  color: chocolate;
+}
+#togglericon {
+  color: chocolate;
+  font-size: 1.5em;
+}
+.navbar-toggler {
+  border: 3px solid chocolate;
+}
+#brand-image {
+  height: 3em;
+}
+p {
+  font-size: 1.25em;
+  font-weight: bold;
+  -webkit-text-fill-color: chocolate;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.01px;
+}
+h3 {
+  font-weight: bold;
+  font-size: 2em;
+  border-bottom: 3px solid black;
+}
+#headline {
+  margin-top: 10em;
+  text-align: center;
+}
+h1 {
+  color: chocolate;
+  font-weight: bold;
+  border-bottom: 3px solid black;
+  text-shadow: black 3px 0px 0px;
+}
+.card {
+  background-color: #a88724;
+  height: 35em;
+  margin: 0 auto;
+}
+#button1,
+#button2,
+#button3 {
+  background-color: black;
+  color: chocolate;
+  border-color: chocolate;
+}
+#button1:focus,
+#button2:focus,
+#button3:focus {
+  box-shadow: 3px 3px chocolate;
+}
+#card1,
+#card2,
+#card3 {
+  visibility: hidden;
+}
+.d-grid {
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  #card1 {
+    margin-top: 5em;
+  }
+  #card2 {
+    margin-top: 3em;
+  }
+  #card3 {
+    margin-top: 3em;
+    margin-bottom: 5em;
+  }
+}
+#button1,
+#button2,
+#button3 {
+  margin-top: 3em;
+}
+@media (max-width: 317px) {
+  .col-12 {
+    padding: 0;
+  }
+}

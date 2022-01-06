@@ -1,0 +1,86 @@
+//(Task 5.1) Variables
+$text-color: chocolate;
+//
+
+//(Task 5.1) Mixing
+@mixin border ($border: #b36b00 ) {
+  border: 5px solid $border;
+  background-color: black;
+}
+//
+
+html,
+body {
+  font-family: papyrus;
+  margin: 0;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+}
+body {
+  background: url("JOKO.jpg") no-repeat center fixed;
+  background-size: cover;
+}
+.navbar {
+  @include border;
+}
+
+.nav-link {
+  color: $text-color;
+}
+.nav-link:hover,
+.nav-link:visited {
+  color: $text-color;
+}
+#togglericon {
+  color: $text-color;
+  font-size: 1.5em;
+}
+.navbar-toggler {
+  border: 3px solid $text-color;
+}
+
+#brand-image {
+  height: 3em;
+}
+p,
+h1 {
+  color: $text-color;
+  font-size: 2em;
+  text-shadow: black 3px 0px 0px;
+  font-weight: bold;
+}
+#headerteksti {
+  margin-top: 3em;
+  float: left;
+}
+#accordion {
+  margin-top: 3em;
+  float: left;
+  padding: 0;
+  width: 100%;
+  margin-bottom: 5em;
+  overflow-x: hidden;
+}
+
+.accordion-button,
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+  background-color: saddlebrown !important;
+  box-shadow: none;
+  font-weight: bold;
+  color: aliceblue
+}
+#card1{
+    @include border;
+}
+
+.accordion-body{
+    color: aliceblue
+}
+
+//(Task 5.1) Selectorin [] lisäys
+*[class^="accordion"] {
+    @include border;
+}
+//

@@ -1,0 +1,87 @@
+html,
+body {
+  font-family: papyrus;
+  margin: 0;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+}
+
+body {
+  background: url("JOKO.jpg") no-repeat center fixed;
+  background-size: cover;
+}
+
+.navbar {
+  border: 5px solid #b36b00;
+  background-color: black;
+}
+
+.nav-link {
+  color: chocolate;
+}
+
+.nav-link:hover,
+.nav-link:visited {
+  color: chocolate;
+}
+
+#togglericon {
+  color: chocolate;
+  font-size: 1.5em;
+}
+
+.navbar-toggler {
+  border: 3px solid chocolate;
+}
+
+#brand-image {
+  height: 3em;
+}
+
+p,
+h1 {
+  color: chocolate;
+  font-size: 2em;
+  text-shadow: black 3px 0px 0px;
+  font-weight: bold;
+}
+
+#headerteksti {
+  margin-top: 3em;
+  float: left;
+}
+
+#accordion {
+  margin-top: 3em;
+  float: left;
+  padding: 0;
+  width: 100%;
+  margin-bottom: 5em;
+  overflow-x: hidden;
+}
+
+.accordion-button,
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+  background-color: saddlebrown !important;
+  box-shadow: none;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+#card1 {
+  border: 5px solid #b36b00;
+  background-color: black;
+}
+
+.accordion-body {
+  color: aliceblue;
+}
+
+*[class^=accordion] {
+  border: 5px solid #b36b00;
+  background-color: black;
+}
+
+/*# sourceMappingURL=built_s%C3%A4%C3%A4nn%C3%B6t.css.map */
